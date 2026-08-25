@@ -3,11 +3,12 @@ Description=API PLN Flask con Gunicorn
 After=network.target
 
 [Service]
-User=ec2-user
-WorkingDirectory=/home/ec2-user/environment
-Environment="PATH=/home/ec2-user/environment/venv/bin"
-ExecStart=/home/ec2-user/environment/venv/bin/gunicorn -w 2 -b 0.0.0.0:8080 app:app
+User=ubuntu
+WorkingDirectory=/home/ubuntu/laboratorio-pln-spacy-aws
+Environment="PATH=/home/ubuntu/laboratorio-pln-spacy-aws/venv/bin"
+ExecStart=/home/ubuntu/laboratorio-pln-spacy-aws/venv/bin/gunicorn -w 2 -b 0.0.0.0:8080 common.app:app
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
