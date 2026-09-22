@@ -1,0 +1,8 @@
+
+# Python
+__pycache__/
+*.pyc
+# Entorno virtual
+venv/
+# Archivos temporales
+dep_ec2.html

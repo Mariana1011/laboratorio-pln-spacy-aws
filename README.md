@@ -132,12 +132,10 @@ La respuesta contiene:
 ### EC2 / Cloud9
 
 ```text
-http://IP_PUBLICA_ACTUAL:8080
+http://34.204.240.213:8080
 ```
 
-La dirección IP pública puede cambiar cuando la instancia EC2 se detiene y vuelve a iniciar.
-
-Antes de una evaluación debe verificarse la IP pública actual de la instancia.
+El despliegue EC2 utiliza la Elastic IP `34.204.240.213`, por lo que la URL pública del servicio es estable mientras la Elastic IP permanezca asociada a la instancia.
 
 ### AWS Lambda
 
